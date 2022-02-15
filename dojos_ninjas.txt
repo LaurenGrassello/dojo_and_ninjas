@@ -1,0 +1,55 @@
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Coding Dojo", NOW(), NOW());
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Python Dojo", NOW(), NOW());
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("JS Dojo", NOW(), NOW());
+
+SET SQL_SAFE_UPDATES = 0;
+
+DELETE FROM dojos;
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Dog Dojo", NOW(), NOW());
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Dragon Dojo", NOW(), NOW());
+
+INSERT INTO dojos (name, created_at, updated_at)
+VALUES ("Hedgehog Dojo", NOW(), NOW());
+
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("4", "Lauren", "Odalen", "28", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("4", "Marley", "Cornbread", "10", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("4", "Tina", "Belcher", "13", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("5", "Soma", "Yukihira", "16", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("5", "Mark", "Hamill", "70", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("5", "Firelord", "Ozai", "50", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("6", "Kogame", "Higurashi", "15", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("6", "Usagi", "Tsukino", "13", NOW(), NOW());
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age, created_at, updated_at)
+VALUES ("6", "Linda", "Belcher", "43", NOW(), NOW());
+
+SELECT * FROM ninjas WHERE dojo_id = 4;
+
+SELECT * FROM ninjas WHERE dojo_id = 6;
+
+SELECT dojo_id FROM ninjas WHERE id = 9;
